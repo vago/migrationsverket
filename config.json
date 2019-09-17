@@ -1,0 +1,19 @@
+{
+    "browser": {
+        "URL": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1",
+        "URLS": {
+            "stockholm": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z209&sokande=1",
+            "norrkoping": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1"
+        },
+        "interval": "10000"
+    },
+    "form": {
+        "firstName": "Namrata",
+        "lastName": "Agarwal",
+        "phone": "0734967590",
+        "email": "namrata0agarwal@gmail.com"
+    },
+    "messages": {
+        "unavailable": "No time slots available."
+    }
+}
