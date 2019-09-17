@@ -8,10 +8,10 @@
         "interval": "10000"
     },
     "form": {
-        "firstName": "Namrata",
-        "lastName": "Agarwal",
-        "phone": "0734967590",
-        "email": "namrata0agarwal@gmail.com"
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "phone": "001InfinityLoop",
+        "email": "john.appleseed@apple.com"
     },
     "messages": {
         "unavailable": "No time slots available."
