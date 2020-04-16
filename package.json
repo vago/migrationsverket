@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "puppeteer": "1.20.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4"
   }
 }

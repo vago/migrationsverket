@@ -1,6 +1,6 @@
 {
     "browser": {
-        "URL": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z209&sokande=1",
+        "preferred": "stockholm",
         "URLS": {
             "stockholm": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z209&sokande=1",
             "norrkoping": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1",
