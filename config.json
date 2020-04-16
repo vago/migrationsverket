@@ -1,11 +1,12 @@
 {
     "browser": {
-        "URL": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1",
+        "URL": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z209&sokande=1",
         "URLS": {
             "stockholm": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z209&sokande=1",
-            "norrkoping": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1"
+            "norrkoping": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1",
+            "uppsala": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=MUP1&sokande=1"
         },
-        "interval": "10000"
+        "interval": "60000"
     },
     "form": {
         "firstName": "John",
@@ -14,6 +15,6 @@
         "email": "john.appleseed@apple.com"
     },
     "messages": {
-        "unavailable": "No time slots available."
+        "unavailable": "At the moment, there are no available time slots.<br>We are adding new time slots on a regular basis, please try again later."
     }
 }

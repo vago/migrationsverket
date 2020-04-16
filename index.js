@@ -9,10 +9,13 @@ async function initBrowser(headless, url) {
     browser = await puppeteer.launch({
         headless,
         defaultViewport: null,
-        args: ['--start-maximized']
+        args: ['--start-maximized'],
+        timeout: 0,
     });
     const page = await browser.newPage();
-    await page.goto(url);
+    await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+    });
     return page;
 }
 
@@ -35,7 +38,7 @@ async function checkMigrationsverket() {
     const dateAvailable = await page.evaluate(UNAVAILABLE => {
         let errorText = document.querySelector('span.feedbackPanelERROR');
         if (errorText) {
-            let value = errorText.innerText;
+            let value = errorText.innerHTML;
             return value !== UNAVAILABLE;
         }
         return true;
@@ -44,7 +47,7 @@ async function checkMigrationsverket() {
     if (dateAvailable) {
         await closeBrowser();
         clearInterval(interval);
-        launchAppointmentForm();
+        await launchAppointmentForm();
     } else {
         console.log(
             `Date unavailable, will check again in ${config.browser.interval /
