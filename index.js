@@ -5,6 +5,16 @@ const config = require('./config.json');
 let interval;
 let browser;
 
+function getChromeLocation() {
+    const useBundledChrome = !!!process.env.npm_config_puppeteer_skip_chromium_download;
+    if (useBundledChrome) {
+        return '';
+    }
+    const isWin = process.platform === 'win32';
+    const { win, mac } = config.browser.chromeLocation;
+    return isWin ? win : mac;
+}
+
 function getSelectedLocationUrl() {
     const selectedUrl = config.browser.URLS[config.browser.preferred];
     if (!selectedUrl) {
@@ -19,6 +29,7 @@ async function initBrowser(headless, url) {
         defaultViewport: null,
         args: ['--start-maximized'],
         timeout: 0,
+        executablePath: getChromeLocation(),
     });
     const page = await browser.newPage();
     await page.goto(url, {

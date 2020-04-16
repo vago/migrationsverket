@@ -6,7 +6,11 @@
             "norrkoping": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=Z083&sokande=1",
             "uppsala": "https://www.migrationsverket.se/ansokanbokning/valjtyp?sprak=en&bokningstyp=2&enhet=MUP1&sokande=1"
         },
-        "interval": "60000"
+        "interval": "60000",
+        "chromeLocation": {
+            "mac": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "win": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+        }
     },
     "form": {
         "firstName": "John",
